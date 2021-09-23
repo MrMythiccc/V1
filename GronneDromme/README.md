@@ -1,1 +1,1 @@
-![website](https://user-images.githubusercontent.com/91183252/134320447-1d34296e-8659-4d1c-96a6-d89c0b30a6a8.PNG)
+![Skærmbillede 2021-09-22 115425](https://user-images.githubusercontent.com/91183252/134323032-d7e0256a-23ef-4f09-a0df-28afdff7ae11.png)

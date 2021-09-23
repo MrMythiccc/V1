@@ -1,0 +1,48 @@
+body {
+    color: darkslategray;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    color: darkgreen;
+}
+
+ul {
+    color: mediumseagreen;
+}
+
+nav {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100%;
+}
+
+nav a {
+    color: mintcream;
+    background-color: olive;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 27px;
+    border-style: groove;
+    border-color: white;
+}
+
+footer {
+    background-color: darkgreen;
+    padding: 30px;
+}
