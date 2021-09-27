@@ -2,16 +2,32 @@ body {
     color: darkslategray;
     padding: 0;
     margin: 0;
+    background-image: url(../img/greenblur.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
 }
+
 
 main {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 170px;
+    background: white;
 }
 
 img {
     max-width: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+li {
+    max-width: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 h1, h2 {
@@ -22,24 +38,39 @@ ul {
     color: mediumseagreen;
 }
 
-nav {
-    background-color: darkgreen;
-    text-align: center;
-    padding: 30px;
+header {
     position: fixed;
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 100%;
+    background-color: whitesmoke;
+}
+
+nav {
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    background-color: rgb(230, 227, 227);
+}
+
+header h1, header h4 {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 nav a {
-    color: mintcream;
-    background-color: olive;
+    /* color: mintcream; */
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(219, 221, 220);
     text-decoration: none;
     border-radius: 10px;
-    padding: 27px;
-    border-style: groove;
-    border-color: white;
+    padding: 6px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style:groove;
+    border-color: grey;
 }
 
 footer {
