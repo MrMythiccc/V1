@@ -25,23 +25,37 @@ img {
 }
 
 li {
-    max-width: 100%;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    /* max-width: 100%; */
+    width: 200px;
+    height: 300px;
+    /* border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; */
+    float: left;
+    padding: 60px;
+}
+
+ul {
+    overflow: hidden;
+}
+
+img.Forside {
+    width: 1000px;
 }
 
 h1, h2 {
     color: darkgreen;
 }
 
-ul {
+ul a {
     color: mediumseagreen;
+    text-decoration: none;
 }
 
 header {
     position: fixed;
     width: 100%;
     background-color: whitesmoke;
+    z-index: 5;
 }
 
 nav {
@@ -51,7 +65,7 @@ nav {
     background-color: rgb(230, 227, 227);
 }
 
-header h1, header h4 {
+header h1, header h2, header h4 {
     background-color: whitesmoke;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -62,16 +76,45 @@ header h1, header h4 {
 nav a {
     /* color: mintcream; */
     color: darkgreen;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(219, 221, 220);
     text-decoration: none;
     border-radius: 10px;
     padding: 6px;
     font-size: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-style:groove;
     border-color: grey;
 }
+
+li img {
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    border-radius: 300px;
+    box-shadow: 10px 10px rgba(0, 255, 106, 0.301);
+  }
+  li img:hover {
+    box-shadow: 20px 20px rgba(0, 255, 149, 0.575);
+    border-radius: 30px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+  }
+
+  /* header {
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    border-radius: 300px;
+    box-shadow: 10px 10px rgba(0, 255, 106, 0.301);
+  }
+  header:hover {
+    box-shadow: 20px 20px rgba(0, 255, 149, 0.575);
+    border-radius: 30px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+  } */
 
 footer {
     background-color: darkgreen;
