@@ -5,6 +5,7 @@ body {
     background-image: url(../img/greenblur.jpg);
     background-attachment: fixed;
     background-size: 100%;
+    max-width: 100%;
 }
 
 
@@ -20,16 +21,17 @@ main {
 
 img {
     max-width: 100%;
+}
+
+.round {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
 li {
-    /* max-width: 100%; */
+    max-width: 100%;
     width: 200px;
     height: 300px;
-    /* border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px; */
     float: left;
     padding: 60px;
 }
@@ -86,15 +88,39 @@ nav a {
     border-color: grey;
 }
 nav a {
-    transition: all 1.2s;
+    /* transition: all 1.2s;
     -webkit-transition: all 1.2s;
-    -moz-transition: all 1.2s;
+    -moz-transition: all 1.2s; */
     border-radius: 3px;
     margin-left: 3px;
     margin-right: 3px;
     /* box-shadow: 10px 10px rgba(0, 255, 106, 0.301); */
   }
-  nav a:hover {
+
+nav a#basilikum {
+    z-index: 6;
+    margin-left: 250px;
+}
+
+nav a#kontaktos {
+    float: right;
+    margin-right: 50px;
+    margin-bottom: -20px;
+}
+
+  /* nav a {
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+  } */
+
+  .Navhover {
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+  }
+
+  .Navhover:hover {
     box-shadow: 20px 20px rgba(0, 255, 149, 0.575);
     border-radius: 15px;
     transform: scale(0.3);
@@ -102,9 +128,7 @@ nav a {
     -moz-transform: scale(0.3);
   }
 
-
-
-li img {
+/* li img {
     transition: all 1.2s;
     -webkit-transition: all 1.2s;
     -moz-transition: all 1.2s;
@@ -117,9 +141,77 @@ li img {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
+  } */
+
+  .planthover {
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    border-radius: 300px;
+    box-shadow: 10px 10px rgba(0, 255, 106, 0.301);
+  }
+
+  .planthover:hover {
+    box-shadow: 20px 20px rgba(0, 255, 149, 0.575);
+    border-radius: 30px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
   }
 
 footer {
     background-color: darkgreen;
     padding: 30px;
+    text-align: center;
+    /* height: 100vh; */
+}
+
+/* Blog index */
+
+h1#starttitle {
+    text-align: center;
+    font-size: 30px;
+    line-height: 4rem;
+}
+
+.marginright {
+    margin-right: 0px;
+}
+
+article p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+div.sidebar {
+    float: left;
+    background-color: darkgrey;
+    padding: 20px;
+    margin-right: 30px;
+    text-align: left;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 100vh;
+}
+
+.sidebar img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sidebar span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* Classes */
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
 }
