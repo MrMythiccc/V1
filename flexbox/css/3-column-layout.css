@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    /* display: flex; */
+}
+
+header, footer {
+    background-color: #666;
+    height: 50px;
+}
+
+main {
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+article {
+    background-color: #ccc;
+    width: auto;
+    /* display: flex; */
+    flex: auto;
+}
+
+aside {
+    background-color: #999;
+    width: 20%;
+    /* height: 100vh; */
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

@@ -1,3 +1,5 @@
+/* Sætter baggrunden til at være et billede,
+Alt tekst på siden har en bestemt farve hvis ikke ændret */
 body {
     color: darkslategray;
     padding: 0;
@@ -6,9 +8,11 @@ body {
     background-attachment: fixed;
     background-size: 100%;
     max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-
+/* Placere hvid baggrund og centere det hele */
 main {
     max-width: 1000px;
     margin-left: auto;
@@ -19,52 +23,44 @@ main {
     background: white;
 }
 
+/* Stopper billeder fra at være storer end den hvide baggrund */
 img {
     max-width: 100%;
 }
 
-.round {
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
+/* Sætter plante billederne i bunden af skærmen i en række */
 li {
     max-width: 100%;
     width: 200px;
     height: 300px;
-    float: left;
     padding: 60px;
 }
 
+/* Holder plante billederne på den hvide del af baggrund */
 ul {
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-img.Forside {
-    width: 1000px;
-}
-
+/* Sætter en standard farve for h1 og h2 */
 h1, h2 {
     color: darkgreen;
 }
 
+/* Ændre teksten ud for plante billederne */
 ul a {
     color: mediumseagreen;
     text-decoration: none;
 }
+
 
 header {
     position: fixed;
     width: 100%;
     background-color: whitesmoke;
     z-index: 5;
-}
-
-nav {
-    text-align: center;
-    padding: 1px;
-    width: 100%;
-    background-color: rgb(230, 227, 227);
 }
 
 header h1, header h2, header h4 {
@@ -75,44 +71,77 @@ header h1, header h2, header h4 {
     margin-top: 10px;
 }
 
+nav {
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    background-color: rgb(230, 227, 227);
+}
+
 nav a {
-    /* color: mintcream; */
     color: darkgreen;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgb(219, 221, 220);
     text-decoration: none;
-    border-radius: 10px;
     padding: 6px;
     font-size: 20px;
     border-style:groove;
     border-color: grey;
-}
-nav a {
-    /* transition: all 1.2s;
-    -webkit-transition: all 1.2s;
-    -moz-transition: all 1.2s; */
     border-radius: 3px;
     margin-left: 3px;
     margin-right: 3px;
-    /* box-shadow: 10px 10px rgba(0, 255, 106, 0.301); */
-  }
+}
 
-nav a#basilikum {
+footer {
+    background-color: darkgreen;
+    padding: 30px;
+    text-align: center;
+    /* position: fixed; */
+    width: 100%;
+    /* bottom: 0; */
+    margin-top: 6rem;
+}
+
+/* Id */
+/* nav a#basilikum {
     z-index: 6;
-    margin-left: 250px;
 }
 
 nav a#kontaktos {
-    float: right;
-    margin-right: 50px;
-    margin-bottom: -20px;
+} */
+
+/* classes */
+
+
+.mainflex {
+    display: flex;
 }
 
-  /* nav a {
-    transition: all 1.2s;
-    -webkit-transition: all 1.2s;
-    -moz-transition: all 1.2s;
-  } */
+.sideimg {
+    width: 400px;
+    margin-bottom: 5px;
+    margin-right:  30px;
+}
+
+.sidetext {
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50%; */
+    margin-bottom: 3px;
+}
+
+img.Forside {
+    width: 1000px;
+}
+
+article p {
+    display: flex;
+}
+
+.round {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
   .Navhover {
     transition: all 1.2s;
@@ -127,21 +156,6 @@ nav a#kontaktos {
     -webkit-transform: scale(0.3);
     -moz-transform: scale(0.3);
   }
-
-/* li img {
-    transition: all 1.2s;
-    -webkit-transition: all 1.2s;
-    -moz-transition: all 1.2s;
-    border-radius: 300px;
-    box-shadow: 10px 10px rgba(0, 255, 106, 0.301);
-  }
-  li img:hover {
-    box-shadow: 20px 20px rgba(0, 255, 149, 0.575);
-    border-radius: 30px;
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-  } */
 
   .planthover {
     transition: all 1.2s;
@@ -159,14 +173,12 @@ nav a#kontaktos {
     -moz-transform: scale(0.9);
   }
 
-footer {
-    background-color: darkgreen;
-    padding: 30px;
-    text-align: center;
-    /* height: 100vh; */
-}
+
+
+
 
 /* Blog index */
+
 
 h1#starttitle {
     text-align: center;
@@ -175,10 +187,10 @@ h1#starttitle {
 }
 
 .marginright {
-    margin-right: 0px;
+    margin-right: 20px;
 }
 
-article p {
+.p {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -192,6 +204,8 @@ div.sidebar {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     height: 100vh;
+    position: relative;
+    z-index: 2;
 }
 
 .sidebar img {
@@ -206,12 +220,25 @@ div.sidebar {
     line-height: 40px;
 }
 
-/* Classes */
-
 .floatleft {
     float: left;
 }
 
 .floatright {
     float: right;
+}
+
+.h3blog {
+    margin-top: 60px;
+    color: darkgreen;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h3blog2 {
+    margin-top: 20px;
+}
+
+.h3gray {
+    font-size: 18px;
+    color: rgb(90, 90, 90);
 }

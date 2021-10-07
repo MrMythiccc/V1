@@ -1,0 +1,14 @@
+/* .container {
+
+} */
+
+header, footer {
+    background-color: #666;
+    height: 50px;
+}
+
+main {
+    background-color: #ccc;
+    height: 100vh;
+}
+

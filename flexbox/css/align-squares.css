@@ -1,0 +1,134 @@
+main>div {margin-left: auto; margin-right: auto; margin-top: 150px;}
+
+.mainP {
+    width: 570px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+}
+
+.mainC {
+    width: 180px;
+    height: 180px;
+    background-color: #999;
+    margin: 5px;
+    display: flex;
+}
+
+.mainCC {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+}
+
+.rainbow {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: 700% 700%;
+    
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.placement {
+
+    -webkit-animation: placement 5s ease infinite;
+    -z-animation: placement 5s ease infinite;
+    -o-animation: placement 5s ease infinite;
+    animation: placement 5s ease infinite;}
+    
+    @-webkit-keyframes placement {
+        0%{align-items: flex-start}
+        20%{align-items: center}
+        40%{align-items: flex-end}
+        60%{justify-items: center}
+        80%{align-items: flex-start}
+        90%{align-items: center}
+        100%{align-items: flex-end}
+
+    }
+    @-moz-keyframes placement {
+        0%{align-items: flex-start}
+        20%{align-items: center}
+        40%{align-items: flex-end}
+        60%{justify-items: center}
+        80%{align-items: flex-start}
+        90%{align-items: center}
+        100%{align-items: flex-end}
+    }
+    @-o-keyframes placement {
+        0%{align-items: flex-start}
+        20%{align-items: center}
+        40%{align-items: flex-end}
+        60%{justify-items: center}
+        80%{align-items: flex-start}
+        90%{align-items: center}
+        100%{align-items: flex-end}
+    }
+    @keyframes placement {
+        0%{align-items: flex-start}
+        20%{align-items: center}
+        40%{align-items: flex-end}
+        60%{justify-items: center}
+        80%{align-items: flex-start}
+        90%{align-items: center}
+        100%{align-items: flex-end}
+        /* 0%{justify-content: flex-start}
+        10%{justify-content: center}
+        20%{justify-content: flex-end}
+        30%{align-items: flex-start}
+        40%{justify-content: center}
+        50%{align-items: flex-start}
+        60%{align-items: center}
+        70%{align-items: flex-end}
+        80%{align-items: flex-start}
+        90%{justify-content: flex-end}
+        100%{justify-content: center} */
+}
+
+.T {
+    align-items: flex-start;
+}
+
+.C {
+    align-items: center;
+}
+
+.B {
+    align-items: flex-end;
+}
+
+
+.-T {
+    justify-content: flex-start;
+}
+
+.-C {
+    justify-content: center;
+}
+
+.-B {
+    justify-content: flex-end;
+}

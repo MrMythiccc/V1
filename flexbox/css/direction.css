@@ -1,0 +1,58 @@
+.parent {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: flex;
+}
+
+.parent1 {
+    flex-direction: row;
+}
+
+.parent2 {
+    flex-direction: row-reverse;
+}
+
+.parent3 {
+    flex-direction: column;
+}
+
+.parent4 {
+    flex-direction: column-reverse;
+}
+
+.child {
+    background-color: red;
+    background-color: green;
+    background-color: blue;
+    background-color: orange;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 42px;
+}
+
+.child1 {
+    background-color: red;
+}
+
+.child2 {
+    background-color: green;
+}
+
+.child3 {
+    background-color: blue;
+}
+
+.child4 {
+    background-color: orange;
+}
+
+h1 {
+    Font-size: 32px;
+}
+
+h4 {
+    Font-size: 18px;
+}
