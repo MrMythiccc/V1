@@ -1,0 +1,268 @@
+nav {
+    background-color: hsl(27, 67%, 30%);
+}
+
+nav img {
+    /* margin: 0.1rem; */
+    /* padding: 0.1rem; */
+    margin-right: 0.3rem;
+    width: 5.5vw;
+}
+
+nav {
+    height: 6vw;
+}
+
+nav>a {
+    display: none;
+    color: hsl(0, 0%, 77%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header section {
+    display: none;
+}
+
+footer {
+    padding: 0.3rem;
+    color: hsl(27, 34%, 43%);
+    background-color: hsl(27, 67%, 30%);
+    /* width: 100vw;*/
+    /* margin: 0px; */
+}
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    max-width: 100%;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    margin: 10px;
+}
+
+h1, h2, h3, h4, p, li {
+    color: hsl(180, 25%, 25%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: hsl(27, 67%, 30%);
+}
+
+a {
+    text-decoration: none;
+}
+
+article {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.faktaboks {
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%, 0.4);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+section.faktacolors h1 {
+    color: hsl(180, 25%, 25%);
+}
+
+.flexdown {
+    flex-direction: column;
+}
+
+.flexcenter {
+    justify-content: center;
+}
+
+.flexfixed {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* flexbox rælaterede classes */
+.container {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-down {
+    flex-direction: column;
+}
+.space-around {
+    justify-content: space-around;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+
+.plase-right {
+    align-self: center;
+}
+.plase-end {
+    align-self: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-auto {
+    flex: auto;
+}
+.flex-center {
+    align-items: center;
+}
+
+
+
+
+
+/* diverse classes */
+
+
+.margin0 {
+    margin: 0;
+}
+
+.margin20 {
+    margin: 20px
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.linkdisable {
+    text-decoration: none;
+}
+
+.linkallow {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* @media */
+
+@media only screen and (min-width: 1201px) {
+    header section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    
+    nav article, .icon-bar {
+        display: none;
+    }
+
+    nav {
+        height: 3vw;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    main {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .bird a {
+        margin: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .bird {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .justify-end {
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 0.9rem;
+    }
+
+    .faktaboks {
+        flex-direction: row;
+        background-color: hsl(0, 0%, 100%, 0.4);
+        padding: 0.5rem;
+        margin: 0rem;
+    }
+    
+    .faktaboks li {
+        color: hsl(180, 25%, 25%);
+        margin: 0.3rem;
+    }
+}
+
+
+
+
+
+
+
+
+.icon-bar {
+  width: 100%;
+  background-color: hsl(27, 67%, 30%);
+  overflow: hidden;
+}
+
+.icon-bar div {
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(27, 27, 27);
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: hsl(27, 39%, 49%);
+}
+
+.active {
+  background-color: hsl(27, 56%, 28%);
+}
+
+
+
+/* 
+nav a, nav img {
+    width: 50%;
+    height: auto;
+} */
