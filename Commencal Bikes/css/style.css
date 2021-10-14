@@ -1,0 +1,243 @@
+.headheader {
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.headerimg img {
+    max-width: 100%;
+    width: 100vw;
+}
+
+nav {
+    background-color: hsl(60, 100%, 60%);
+    height: 10vw;
+}
+
+nav article {
+    align-items: center;
+    margin-right: 0.3rem;
+    width: 5.5vw;
+}
+
+.footerdiv {
+    padding-bottom: 1rem;
+}
+
+.embed {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+.footer p {
+    color: white;
+    margin-left: 20px;
+}
+
+.gul {
+    color: hsl(60, 100%, 60%);
+}
+
+.letfed {
+    font-weight: 550;
+}
+
+article.footer h4.topfooter {
+    margin-top: 0px;
+    padding-top: 3rem;
+}
+
+article.footer p.bottomfooter {
+    margin-bottom: 0px;
+    padding-bottom: 2rem;
+}
+
+footer {
+    padding: 0.3rem;
+    height: 100%;
+}
+
+footer div {
+    background-color: hsl(0, 0%, 83%)
+}
+
+footer article {
+    background-color: black;
+}
+
+body {
+    background-color: white;
+    max-width: 100%;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    margin: 10px;
+}
+
+h1, h2, h3, h4, p, li {
+    color: black;
+    font-family: Arial, Helvetica, Sans Serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.faktaboks {
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%, 0.4);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+section.faktacolors h1 {
+    color: hsl(180, 25%, 25%);
+}
+
+.flexdown {
+    flex-direction: column;
+}
+
+.flexcenter {
+    justify-content: center;
+}
+
+.flexfixed {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* flexbox rælaterede classes */
+.container {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-down {
+    flex-direction: column;
+}
+.space-around {
+    justify-content: space-around;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+
+.plase-right {
+    align-self: center;
+}
+.plase-end {
+    align-self: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-auto {
+    flex: auto;
+}
+.flex-center {
+    align-items: center;
+}
+
+
+
+
+
+/* diverse classes */
+
+
+.lineheight2 {
+    line-height: 2px;
+}
+
+.lineheight4 {
+    line-height: 2px;
+}
+
+.lineheight6 {
+    line-height: 2px;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.margin5 {
+    margin: 5px;
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.margin20 {
+    margin: 20px
+}
+
+.padding {
+    padding: 1rem;
+}
+
+.linkdisable {
+    text-decoration: none;
+}
+
+.linkallow {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* @media */
+
+@media only screen and (min-width: 1201px) {
+    /* header section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    
+    nav article, .icon-bar {
+        display: none;
+    }
+
+    nav {
+        height: 3vw;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    main {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .justify-end {
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 0.9rem; */
+    /* } */
+}
