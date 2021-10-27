@@ -59,7 +59,7 @@ footer {
     height: 100%;
 }
 
-footer div {
+footer {
     background-color: hsl(0, 0%, 83%)
 }
 
@@ -207,37 +207,24 @@ section.faktacolors h1 {
 
 /* @media */
 
-@media only screen and (min-width: 1201px) {
-    /* header section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem;
-    }
-    
-    nav article, .icon-bar {
-        display: none;
-    }
-
-    nav {
-        height: 3vw;
-    }
-
-    nav a {
-        display: flex;
+@media only screen and (min-width: 700px) {
+    .bikelist {
         flex-direction: row;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bikelist div {
+        margin: 20px;
     }
 
-    main {
-        max-width: 80%;
+    footer>div.footerdiv {
+        flex-direction: column;
         margin: auto;
+        max-width: 80%;
     }
-
-    .justify-end {
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 1.5rem;
-        font-weight: 0.9rem; */
-    /* } */
+    .embed>iframe {
+        width: 530px;
+        height: 300px;
+        /* max-width: 80%; */
+    }
 }
