@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="button.js"></script>
+    <title>Fanny's Fantastical Fantasybeasts</title>
+    <link rel="icon" href="img/Logo.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <header>
+        <h1>Fanny's Fantastical Fantasybeasts</h1>
+    </header>
+    
+    <main>
+        <!-- Nav er inden i main så den kan blive til en sidebar på pc -->
+
+        <nav>
+            <h2>
+                Fanny's Fantastical Fantasybeasts
+            </h2>
+
+            <div class="dropdown showdrop">
+                <button class="dropbtn showdrop" onclick="buttonhandle()" ><img src="img/bars-solid.svg" alt="Fantasy Mythical Creature Animal"></button>
+                <div class="dropdown-content" id="mybtn">
+                    <a href="index.html">
+                        Hjem
+                    </a>
+                    <a href="index.html#gallery">
+                        Væsener
+                    </a>
+                    <a href="kontakt.html">
+                        Kontakt os
+                    </a>
+                    <a href="blog_forside.html">
+                        Blog
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="index.html">
+                    Hjem
+                </a>
+                <a href="index.html#gallery">
+                    Væsener
+                </a>
+                <a href="kontakt.html">
+                    Kontakt os
+                </a>
+                <a href="blog_forside.html">
+                    Blog
+                </a>
+            </div>
+        </nav>
+
+        <div class="content"> 
+
+            <!-- Forside tekst -->
+
+            <div class="text">
+                <img src="img/Logo.png" alt="Fantasy Mythical Creature Animal">
+
+                <h3>
+                    Velkommen til Fanny’s Fanstastical Fantasybeasts
+                </h3><br>
+
+                <p>
+                    Fanny’s Fantastical Fanstasybeasts er en wiki side for fantasi og mytologiske væsner. 
+                </p><br>
+
+                <p>
+                    På siden kan du finde et stort udvalg af uddybende indlæg omkring specifikke væsner.
+                    Derudover har vi også vores blog, hvor du kan finde indlæg vedrørende forskellige kategorier af fantastiske væsner.
+                </p><br>
+                
+                <p>
+                    Skulle du have nogle problemer med hjemmesiden eller, hvis du vil forslå et fantastisk væsen, som du syntes burde være på vores hjemmeside, så kan du sende en besked til os på vores kontakt side.
+                </p>
+            </div>
+
+            <!-- Galleriet med links til de forskellige sider -->
+
+            <div class="gallery" id="gallery">
+                <a href="vesener/cracksanta.html">
+                    <img src="img/CRACK.jpg" alt="Fantasy Mythical Creature Animal">
+                    Julemanden på crack
+                </a>
+                <a href="vesener/katakan.html">
+                    <img src="img/katakan_top450px.jpg" alt="Fantasy Mythical Creature Animal">
+                    Katakan
+                </a>
+                <a href="vesener/scp049.html">
+                    <img src="img/SCP-049E-Small.png" alt="Fantasy Mythical Creature Animal">
+                    SCP-049
+                </a>
+                <a href="vesener/spidertrain.html">
+                    <img src="img/spidertrain.png" alt="Fantasy Mythical Creature Animal">
+                    Spidertrain
+                </a>
+                <a href="vesener/truegod.html">
+                    <img src="img/true-god-450px.jpg" alt="Fantasy Mythical Creature Animal">
+                    True God
+                </a>
+                <a href="vesener/scp682.html">
+                    <img src="img/scp682.jpg" alt="Fantasy Mythical Creature Animal">
+                    SCP-682
+                </a>
+                <a href="vesener/milk.html">
+                    <img src="img/buffmilk.png" alt="Fantasy Mythical Creature Animal">
+                    Buffilus Milkius (SCP-686)
+                </a>
+
+                <!-- Blank billede så det hele sidder ordenligt -->
+                <a href="">
+                </a>
+                <a href="">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Fanny™</p>
+    </footer>
+</body>
+</html>

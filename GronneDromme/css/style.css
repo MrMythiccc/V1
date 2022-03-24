@@ -85,7 +85,7 @@ nav a {
     text-decoration: none;
     padding: 6px;
     font-size: 20px;
-    border-style:groove;
+    border-style:;
     border-color: grey;
     border-radius: 3px;
     margin-left: 3px;
@@ -241,4 +241,124 @@ div.sidebar {
 .h3gray {
     font-size: 18px;
     color: rgb(90, 90, 90);
+}
+
+
+.checkedboks1 {
+    display: none;
+}
+
+.checkboks:checked ~.checkedboks1 {
+    display: block;
+}
+
+.kontaktindex form, .kontaktos {
+    max-width: 60%;
+    width: 60%;
+    justify-content: center;
+}
+
+.kontaktos {
+    max-width: 48%;
+    width: 48%;
+}
+
+.formarticle {
+    display: flex;
+    justify-content: center;
+}
+
+.kontaktindex form p, .kontaktos {
+    display: flex;
+}
+
+.kontaktindex form p {
+    /* justify-content: space-between; */
+    margin-right: 1rem;
+}
+
+.kontaktindex div .checkedboks1 {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.checkedboks, form p {
+    justify-content: space-between;
+}
+
+.flexauto {
+    flex: auto;
+}
+
+.contactform p input, .contactform p textarea {
+    background-color: lightgray;
+    resize: none;
+}
+
+.contactform p input:focus, .contactform p textarea:focus {
+    background-color: white;
+}
+
+.kontaktindex p input:focus {
+    color: white;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: 700% 700%;
+    
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.kontaktindex p textarea:focus {
+    color: white;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: 700% 700%;
+    
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+    
+    @-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="button.js"></script>
+    <link rel="icon" href="img/Logo.png" type="image/gif" sizes="16x16">
+    <title>Fanny's Fantastical Fantasybeasts</title>
+</head>
+<body id="kontaktos">
+    <header>
+        <h1>Fanny's Fantastical Fantasybeasts</h1>
+    </header>
+    
+    <main>
+        <!-- Nav er inden i main så den kan blive til en sidebar på pc -->
+
+        <nav>
+            <h2>
+                Fanny's Fantastical Fantasybeasts
+            </h2>
+
+            <div class="dropdown showdrop">
+                <button class="dropbtn showdrop" onclick="buttonhandle()" ><img src="img/bars-solid.svg" alt="Fantasy Mythical Creature Animal"></button>
+                <div class="dropdown-content" id="mybtn">
+                    <a href="index.html">
+                        Hjem
+                    </a>
+                    <a href="index.html#gallery">
+                        Væsener
+                    </a>
+                    <a href="kontakt.html">
+                        Kontakt os
+                    </a>
+                    <a href="blog_forside.html">
+                        Blog
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="index.html">
+                    Hjem
+                </a>
+                <a href="index.html#gallery">
+                    Væsener
+                </a>
+                <a href="kontakt.html">
+                    Kontakt os
+                </a>
+                <a href="blog_forside.html">
+                    Blog
+                </a>
+            </div>
+        </nav>
+
+        <div class="content"> 
+
+            <div>
+                <img src="img/Logo.png" alt="fantasy animal mythical creature">
+
+                <article class="formarticle">
+                    <form method="post" action="kontaktlanding.html" class="contactform">
+                        <p>
+                            <label for="fnavn">Fornavn:</label>
+                            <input type="text" name="fnavn" placeholder="Indtast dit fornavn" required>
+                        </p>
+                        <p>
+                            <label for="mail">E-Mail:</label>
+                            <input type="email" name="mail" placeholder="Indtast din e-mail" required>
+                        </p>
+                        <p>
+                            <label for="teksetboks">Besked:</label>
+                            <textarea name="teksetboks" cols="30" rows="10" placeholder="Indtast din besked her" required></textarea>
+                        </p>
+                        <p class="indsend">
+                            <input type="submit" name="submit" value="Indsend" href="kontaktlanding.html">
+                        </p>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Fanny™</p>
+    </footer>
+</body>
+</html>

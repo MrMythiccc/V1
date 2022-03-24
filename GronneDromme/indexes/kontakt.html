@@ -11,7 +11,7 @@
     <meta name="description" content="Grønne Drømme - Det komplette planteleksikon: Alt hvad du skal vide om planter. Du finder her det ultimative planteleksikon for de smukkeste planter.">
     <title>Grønne Drømme - Planteleksikon, Planter og Plante information</title>
 </head>
-<body id="blog">
+<body id="blog" class="kontaktindex">
     <header>
         <h1>Grønne Drømme</h1>
         <h4>Alle Haveentusiasters Leksikon.</h4>
@@ -24,13 +24,13 @@
     </header>
     <main>
         <section>
-            <article>
-                <h1 class="">Kontakt os</h1>
+            <article class="kontaktos">
+                <h1>Kontakt os</h1>
             </article>
         </section>
         <section>
-            <article>
-                <form method="get" action="kontaktlanding.html" class="contactform">
+            <article class="formarticle">
+                <form method="post" action="kontaktlanding.html" class="contactform container">
                     <p>
                         <label for="fnavn">Fornavn:</label>
                         <input type="text" name="fnavn" required>
@@ -44,47 +44,105 @@
                         <textarea name="teksetboks" cols="30" rows="10" placeholder="Indtast din besked her"></textarea>
                     </p>
                     <br>
+
+                    <label for="checkboks" class="checkboks">Ny Plante til databasen?</label>
+                    <input type="checkbox" name="checkboks" class="checkboks">
+                    
+                    <div class="checkedboks1">
+                        <p class="checkedboks">
+                            <label for="dansknavnplante">Plantens danske navn:</label>
+                            <input type="text" name="dansknavnplante">
+                        </p>
+                        <p class="checkedboks">
+                            <label for="variantplante">Plantens variant:</label>
+                            <input type="text" name="variantplante">
+                        </p>
+                        <p class="checkedboks">
+                            <label for="botanisknavnplante">Plantens botaniske navn:</label>
+                            <input type="text" name="botanisknavnplante">
+                        </p>
+                        <p class="checkedboks">
+                            <label for="typeplante">Plantens type:</label>
+                            <input type="text" name="typeplante">
+                        </p>
+                        <p class="checkedboks">
+                            <label for="typeplante">Plantens type:</label>
+                            <input type="text" name="typeplante">
+                        </p>
+                        <p class="checkedboks">
+                            <label for="højdeplante" class="flexauto">Plantens højde:</label>
+                            <input type="number" name="højdeplante">
+                            <label for="højdeplante2">&nbsp; cm</label>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="rækkeafstandplante" class="flexauto">Plantens rækkeafstand:</label>
+                            <input type="number" name="rækkeafstandplante">
+                            <label for="rækkeafstandplante2">&nbsp; cm</label>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="sådybdeplante" class="flexauto">Plantens sådybde:</label>
+                            <input type="number" name="sådybdeplante">
+                            <label for="sådybdeplante2">&nbsp; cm</label>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="lysforholdplante">Plantens lys forhold:</label>
+                            <select name="lysforholdplante">
+                                <option value="fuldsol">Fuld Sol</option>
+                                <option value="lidtsol">Lidt Sol</option>
+                                <option value="skygge">Skygge</option>
+                            </select>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="forspiresplante">Planten forspires i:<br>(vælg flere med ctrl eller shift)</label>
+                            <select name="forspiresplante" size="12" multiple>
+                                <option value="januar">Januar</option>
+                                <option value="februar">Februar</option>
+                                <option value="marts">Marts</option>
+                                <option value="april">April</option>
+                                <option value="maj">Maj</option>
+                                <option value="juni">Juni</option>
+                                <option value="juli">Juli</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="oktober">Oktober</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="udplantesplante">Planten udplantes i:<br>(vælg flere med ctrl eller shift)</label>
+                            <select name="udplantesplante" size="12" multiple>
+                                <option value="januar">Januar</option>
+                                <option value="februar">Februar</option>
+                                <option value="marts">Marts</option>
+                                <option value="april">April</option>
+                                <option value="maj">Maj</option>
+                                <option value="juni">Juni</option>
+                                <option value="juli">Juli</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="oktober">Oktober</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="spirerplante" class="flexauto">Planten spirer efter ca.:</label>
+                            <input type="number" name="spirerplante">
+                            <label for="spirerplante2">&nbsp; dage</label>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="spirerplante" class="flexauto">Planten spirer efter ca.:</label>
+                            <input type="number" name="spirerplante">
+                            <label for="spirerplante2">&nbsp; dage</label>
+                        </p>
+                        <p class="checkedboks">
+                            <label for="teksetboks2">Plantebeskrivelse:</label>
+                            <textarea name="teksetboks2" cols="30" rows="10" placeholder="Indtast din besked her"></textarea>
+                        </p>
+                    </div>
                     <p>
-                        <label for="checkboks">Ny Plante til databasen?</label>
-                        <input type="checkbox" name="checkboks">
-                    </p>
-                    <p>
-                        <label for="dansknavnplante">Plantens danske navn:</label>
-                        <input type="text" name="dansknavnplante" required>
-                    </p>
-                    <p>
-                        <label for="variantplante">Plantens variant:</label>
-                        <input type="text" name="variantplante" required>
-                    </p>
-                    <p>
-                        <label for="botanisknavnplante">Plantens botaniske navn:</label>
-                        <input type="text" name="botanisknavnplante" required>
-                    </p>
-                    <p>
-                        <label for="typeplante">Plantens type:</label>
-                        <input type="text" name="typeplante" required>
-                    </p>
-                    <p>
-                        <label for="typeplante">Plantens type:</label>
-                        <input type="text" name="typeplante" required>
-                    </p>
-                    <p>
-                        <label for="højdeplante">Plantens højde:</label>
-                        <input type="text" name="højdeplante" required>
-                    </p>
-                    <p>
-                        <label for="rækkeafstandplante">Plantens rækkeafstand:</label>
-                        <input type="text" name="rækkeafstandplante" required>
-                    </p>
-                    <p>
-                        <label for="sådybdeplante">Plantens sådybde:</label>
-                        <input type="text" name="sådybdeplante" required>
-                    </p>
-                    <p>
-                        <label for="lysforholdplante">Plantens lys forhold:</label>
-                        <select name="lysforholdplante" required>
-                            <option value="fuldsol">Fuld Sol</option>
-                        </select>
+                        <input type="submit" name="submit" value="Indsend" href="kontaktlanding.html">
                     </p>
                 </form>
             </article>

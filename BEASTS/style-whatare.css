@@ -1,0 +1,456 @@
+/* 
+
+FARVER 
+
+Baggrund: #BEB4A6
+Mørkere baggrund: #958F80
+Farve splash: #715989
+Call to action: #D66E3C
+Tekst: #201C20
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Vollkorn:ital@1&display=swap');
+
+/*/////////*/
+/* FIX ALT */
+/*/////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color:  #201C20;
+    font-family: 'Vollkorn', serif;
+}
+
+/* Gør en masse ting display flex */
+
+body, main, header, footer, nav, .content, .gallery, .gallery a, .article {
+    display: flex;
+}
+
+/* Flex direction collumn */
+
+body, main, .content, .gallery a, .content div {
+    flex-direction: column;
+}
+
+.column{
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+/* Align items og justify content */
+
+body, header, footer, .content, .gallery, .gallery a {
+    align-items: center;
+}
+
+header, footer, .gallery { 
+    justify-content: center;
+}
+
+/* Fyld hele bredden */
+
+body, header, nav, footer, main { 
+    width: 100vw;
+}
+
+/*///////////////////////*/
+/* Header, nav og footer */
+/*///////////////////////*/
+
+/* Giv header og footer en fast højde og en baggrundsfarve */
+
+header, footer {
+    height: 4rem;
+    background-color: #958F80;
+}
+
+/* Sæt tekst størrelsen i footeren */
+
+footer p {
+    width: 80%;
+    font-size: 150%;
+}
+
+/* Få headeren til at forsvinde intil skærmen bliver stor nok */
+
+header {
+    display: none;
+}
+
+/* Gør h1 overskriften i headeren pæn og få tekst til at stå ordenligt */
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #201C20;
+    opacity: 0.8;
+}
+
+/* Giv nav en fast højde, en baggrundsfarve og borders */
+
+nav {
+    background-color: #715989;
+    height: 3rem;
+
+    /* Få billedet i nav til at stå helt til højre */
+    justify-content: flex-end;
+
+    border-bottom: solid .2rem #201C20;
+}
+
+/* Giv billedet i nav en fast størrelse */
+
+nav img {
+    height: auto;
+    width: 3rem;
+}
+
+.links {
+    display: none;
+}
+
+/*///////////////////////*/
+/* Body, main og content */
+/*///////////////////////*/
+
+/* Få body til at fylde mindst hele højden */
+
+body {
+    min-height: 100vh;
+    background-color: #BEB4A6;
+}
+
+/* Få main til at flex row så sidebarren sidder i siden når skærmen bliver stor */
+
+main {
+    flex: auto;
+    background-color: #BEB4A6;
+}
+
+/* Giv content delen padding på toppen */
+
+.content {
+    padding-top: 2rem;
+}
+
+/* Få div'er inden i content delen til kun at fylde 80% af content */
+/* Sæt tekst størrelse på tekst i div'er inden i content */
+
+.content div {
+    width: 80%;
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Få billeder til ikke at fylde mere en div'en de er inden i */
+
+.content div>img {
+    max-width: 100%;
+}
+
+/*///////////*/
+/* Galleriet */
+/*///////////*/
+
+/* Kom padding på galleriet og giv det borders */
+
+.gallery {
+    padding: 1rem;
+
+    border-bottom: solid .2rem #201C20;
+    border-top: solid .2rem #201C20;
+}
+
+/* Giv a tags inden i galleriet margin og få teksten til at sidde i midten */
+
+.gallery a {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+/* Få a tags inden i galleriet til ikke at fylde mere end de skal */
+
+.gallery img, .gallery a {
+    max-width: 100%;
+    width: 300px;
+}
+
+.gallery img {
+    margin-bottom: .5rem;
+}
+
+/*///////*/
+/* Tekst */
+/*///////*/
+
+/* Giv h tags en funny font */
+
+h1, h2, h3 {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+/* PC Skærm media query */
+
+@media only screen and (min-width: 840px) {
+    .content .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    .gallery a {
+        margin: 0 1rem;
+    }
+
+    header {
+        display: flex;
+        border-bottom: solid .2rem #201C20;
+    }
+
+    .gallery img, .gallery a {
+        max-width: 100%;
+        width: 400px;
+    }
+
+    .content div>img {
+        max-height: 50rem;
+        max-width: 40%;
+
+        float: left;
+    }
+
+    .content>div:not(.gallery) {
+        flex-direction: row;
+    }    
+    
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 100vw;
+    }
+
+    .links a {
+        font-size: 2.4rem;
+    }
+
+    .katakan .infoboks img{
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* christians css */
+
+.katakan .infoboks{
+    background-color: #958F80;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 0.2rem #201C20;
+}
+
+.katakan .infoboks .infocontent{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.infocontent ul, .infocontent p{
+    margin: 1.5rem;
+}
+
+.katakan .infoboks .infocontent{
+    width: 100%;
+}
+
+.biggie{
+    font-size: 3rem;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* KONTAKT OS */
+
+#kontaktos .contactform {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontaktos .contactform p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#kontaktos .contactform textarea {
+    resize: none;
+}
+
+#kontaktos .contactform textarea, input {
+    width: 50vw;
+}
+
+#kontaktos .contactform textarea, input {
+    background-color: lightgray;
+}
+
+#kontaktos .contactform textarea:focus, input:focus {
+    background-color: white;
+}
+
+#kontaktos p.indsend {
+    align-self: center;
+    width: 10vw;
+}
+
+#kontaktos p.indsend input {
+    background-color: white;
+}
+
+@media only screen and (min-width: 840px) {
+
+    #kontaktos .contactform {
+        width: 47.5%;
+    }
+
+    #kontaktos .contactform textarea, input {
+        width: 30vw;
+    }
+
+    #kontaktos .contactform input {
+        width: 25vw;
+    }
+
+    #kontaktos p.indsend {
+        margin-top: 7vh;
+    }
+}
+
+/* **************** */
+/*                  */
+/* HVAD ER MYTHICAL */
+/*                  */
+/* **************** */
+
+#whatare .titlename {
+    font-size: 3rem;
+}
+
+#whatare div.content img {
+    width: 450px;
+    height: 450px;
+    float: right;
+}
+
+#whatare main {
+    background-color: #715989;
+}
+
+#whatare .content {
+    margin: 0px;
+    height: 100vh;
+    background-color: #BEB4A6;
+}
+
+/* **************** */
+/*                  */
+/* HVAD ER MYTHICAL */
+/*      SIDEBAR     */
+/*                  */
+/* **************** */
+
+#whatare .sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: 840px) {
+
+
+    #whatare .sidebar {
+        width: 300px;
+        height: 100vh;
+        float: left;
+        background-color: #beb4a683;
+        display: flex;
+    }
+
+    #whatare .sidebar section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: #d66d3cab 2px dotted;
+    }
+
+    #whatare .sidebar a {
+        margin: 1rem 1rem 1rem 1rem;
+        background-color: #715989;
+        border: #715989 10px solid;
+        border-radius: 5px;
+    }
+
+    #whatare .sidebar a img {
+        border-radius: 5px;
+    }
+
+    #whatare .sidebar h2 {
+        margin: 2rem;
+        margin-bottom: 20px;
+        padding-bottom: 2rem;
+        align-self: center;
+        border-bottom: 10px groove #715989;
+    }
+
+    #whatare .main-opdeler {
+        flex-direction: row;
+    }
+
+    #whatare .article{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #whatare .article img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+/* BUFFMILK */
+
+/* #buffmilk .titlename {
+    font-size: 2rem;
+}
+
+#buffmilk .infobox {
+    display: flex;
+}
+
+#buffmilk .infotext {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 840px) {
+
+    #buffmilk .logo {
+        margin: 1rem;
+        margin-top: 0.4rem;
+    }
+
+    #buffmilk .column {
+        flex-direction: column;
+    }
+} */

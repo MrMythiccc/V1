@@ -1,0 +1,686 @@
+/* 
+
+    STYLE.CSS
+    Stylesheet
+
+*/
+/* 
+
+
+   ////// FARVE SKEMA //////
+
+    Baggrund: #BEB4A6
+    Mørkere baggrund: #958F80
+    Farve splash: #715989
+    Call to action: #D66E3C
+    Tekst: #201C20
+
+
+*/
+
+/*//////////////*/
+/* GENERAL FONT */
+/*//////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Vollkorn:ital@1&display=swap');
+
+
+
+
+/*///////////////////*/
+/* GENERALE SETTINGS */
+/*///////////////////*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color:  #201C20;
+    font-family: 'Vollkorn', serif;
+}
+
+/* Gør en masse ting display flex */
+
+body, main, header, footer, nav, .content, .gallery, .gallery a, .info, .halfOne, .halfOneRight, .blogItemTop, .blogList, .blogItem, .blogItem * {
+    display: flex;
+}
+
+/* Flex direction collumn */
+
+body, main, .content, .gallery a, .content.text, header, .info, .halfOne {
+    flex-direction: column;
+}
+
+
+/* Align items og justify content */
+
+body, header, footer, .content, .gallery, .gallery a {
+    align-items: center;
+}
+
+footer, .gallery, header { 
+    justify-content: center;
+}
+
+/* Fyld hele bredden */
+
+body, main, header, footer, nav { 
+    width: 100%;
+}
+
+.content {
+    max-width: 1500px;
+}
+
+
+
+/*///////////////////////*/
+/* Header, nav og footer */
+/*///////////////////////*/
+
+
+
+/* Giv header og footer en fast højde og en baggrundsfarve */
+
+header, footer {
+    height: 4rem;
+    background-color: #958F80;
+}
+
+/* Sæt tekst størrelsen i footeren */
+
+footer p {
+    width: 80%;
+    font-size: 150%;
+}
+
+footer {
+    border-top: solid .2rem #201C20;
+}
+
+/* Få headeren til at forsvinde intil skærmen bliver stor nok */
+
+header {
+    display: none;
+}
+
+/* Gør h1 overskriften i headeren pæn og få tekst til at stå ordenligt */
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #201C20;
+    opacity: 0.8;
+}
+
+/* Giv nav en fast højde, en baggrundsfarve og borders */
+
+nav {
+    background-color: #715989;
+    height: 3rem;
+
+    /* Få billedet i nav til at stå helt til højre */
+    justify-content: space-between;
+
+    border-bottom: solid .2rem #201C20;
+}
+
+/* Giv billedet i nav en fast størrelse */
+
+nav img {
+    height: auto;
+    width: 3rem;
+}
+
+nav h2 {
+    display: block;
+
+    margin: auto 0;
+    margin-left: .5rem;
+
+    font-size: 1.3rem;
+}
+
+.links {
+    display: none;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+
+
+/*///////////////////////*/
+/* Body, main og content */
+/*///////////////////////*/
+
+
+
+/* Få body til at fylde mindst hele højden */
+
+body {
+    min-height: 100vh;
+    background-color: #BEB4A6;
+}
+
+/* Få main til at flex row så sidebarren sidder i siden når skærmen bliver stor */
+
+main {
+    flex: auto;
+    background-color: #BEB4A6;
+}
+
+/* Giv content delen padding på toppen */
+
+.content {
+    padding-top: 2rem;
+    
+    margin: 0 auto;
+}
+
+/* Få div'er inden i content delen til kun at fylde 80% af content */
+/* Sæt tekst størrelse på tekst i div'er inden i content */
+
+.content>div {
+    margin: 0 10%;
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Få billeder til ikke at fylde mere en div'en de er inden i */
+
+.content div>img {
+    max-width: 100%;
+}
+
+/*///////////*/
+/* Galleriet */
+/*///////////*/
+
+
+
+/* Kom padding på galleriet og giv det borders */
+
+.gallery {
+    padding: 1rem;
+    flex-wrap: wrap;
+    border-bottom: solid .2rem #201C20;
+    border-top: solid .2rem #201C20;
+}
+
+/* Giv a tags inden i galleriet margin og få teksten til at sidde i midten */
+
+.gallery a {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+/* Få a tags inden i galleriet til ikke at fylde mere end de skal */
+
+.gallery img, .gallery a {
+    max-width: 100%;
+    width: 320px;
+}
+
+.gallery img {
+    margin-bottom: .5rem;
+}
+
+/*///////*/
+/* Tekst */
+/*///////*/
+
+/* Giv h tags en funny font */
+
+h1, h2, h3 {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+/*///////////*/
+/* Info kort */
+/*///////////*/
+
+
+.info {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.info ul {
+    margin-left: 2rem;
+}
+
+.info img, .halfOne {
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.info img, .gallery img {
+    border: solid .2rem #201C20;
+}
+
+.halfOne img {
+    border: solid .2rem #201C20;
+}
+
+.halfOne {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: solid .2rem #201C20;
+    border-bottom: solid .2rem #201C20;
+}
+
+.halfTwo *{
+    margin: .5rem 0;
+}
+
+.halfOneRight {
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+    margin-left: .5rem;
+}
+
+/* Container classes */
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*//////////////*/
+/* BLOG FORSIDE */
+/*//////////////*/
+
+
+.blogList {
+    flex-direction: column;
+    padding: 1rem;
+    border-top: solid .2rem #201C20;
+}
+
+.blogItem {
+    width: 80vw;
+    padding: 1.5rem 0;
+    border-bottom: solid .2rem #201C20;
+    
+}
+
+.blogItem a {
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.blogItem img {
+    margin-right: 1rem;
+    height: 100%;
+    max-height: 8rem;
+}
+
+.blogItem, .blogItemTop div{
+    flex-direction: column;
+}
+
+.blogItemTop {
+    flex-direction: row;
+}
+
+.blogItem>a>div.blogItemTop p {
+    display: none;
+}
+
+
+/*/////////////*/
+/* MENU MOBILE */
+/*/////////////*/
+
+
+/* Denne function er med til at gemme vores button, når vi er i desktop mode og vise den igen når vi er i mobil mode */
+.showdrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Drop down Code */
+
+/* Denne function laver vores drop down liste */ 
+.dropbtn {
+align-items: flex-end;
+margin-bottom: 0.5rem;
+background: none;
+color: white;
+margin-right: 0.5rem;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #958F80;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom: solid .2rem #201C20;
+}
+
+.dropdown img {
+    width: 2.7rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    border-top: solid .2rem #201C20;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #BEB4A6}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+@media only screen and (min-width: 800px) {
+
+    /*///////////////////////////*/
+    /*      GENERALE SETTINGS    */
+    /*        MEDIA QUERY        */
+    /*       PC SKÆRM 800px      */
+    /*///////////////////////////*/
+
+    /* Gør at dropdown menuen ikke bliver vist på pc hvis den er åben når man skifter format */
+    .showdrop {
+        display: none;
+    }
+
+    .content .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    /* Fjerner menu ikonet på pc skærm */
+    nav img {
+        display: none;
+    }
+
+    /* Fjerner h2 fra nav baren så den bliver sat over til headeren */
+    nav h2 {
+        display: none;
+    }
+
+    .gallery a {
+        margin: 0 1rem;
+    }
+
+    header {
+        display: flex;
+        border-bottom: solid .2rem #201C20;
+    }
+
+    .gallery img, .gallery a {
+        max-width: 100%;
+        width: 350px;
+    }
+
+    .content div>img {
+        max-height: 50rem;
+        max-width: 40%;
+
+        float: left;
+    }
+
+    .content>div.text {
+        flex-direction: row;
+    }    
+
+    .links {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .links a {
+        margin: 0 2rem;
+        font-size: 2.4rem;
+    }
+
+    .content>.info {
+        width: 60%;
+    }
+
+    .content .info img {
+        width: 50%;
+        max-width: 40rem;
+    }
+
+    .halfOne {
+        flex-direction: row;
+    }
+
+    .halfTwo {
+        flex :auto;
+        margin-left: 1rem;
+    }
+
+
+    /*//////////////*/
+    /* BLOG FORSIDE */
+    /*//////////////*/
+
+
+    .blogItem a {
+        flex-direction: row;
+    }
+
+    .blogItemTop {
+        flex-direction: row;
+    }
+
+    .blogItem img {
+        margin-right: 1rem;
+        height: 100%;
+    }
+
+    .blogItem>a>div:not(.blogItemTop) p {
+        display: none;
+    }
+
+    .blogItem>a>div.blogItemTop p {
+        display: block;
+    }
+}
+
+
+/*////////////*/
+/* KONTAKT OS */
+/*////////////*/
+
+
+#kontaktos .contactform {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontaktos .contactform p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#kontaktos .contactform textarea {
+    resize: none;
+}
+
+#kontaktos .contactform textarea, input {
+    width: 50vw;
+}
+
+#kontaktos .contactform textarea, input {
+    background-color: lightgray;
+}
+
+#kontaktos .contactform textarea:focus, input:focus {
+    background-color: white;
+}
+
+#kontaktos p.indsend {
+    align-self: center;
+    width: 10vw;
+}
+
+#kontaktos p.indsend input {
+    background-color: white;
+}
+
+#kontaktos .contactform *{
+    margin-bottom: .2rem;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    /*/////////////*/
+    /* KONTAKT OS  */
+    /* MEDIA QUERY */
+    /*/////////////*/
+
+    #kontaktos .contactform {
+        width: 50vw;
+    }
+
+    #kontaktos .contactform textarea, input {
+        width: 30vw;
+    }
+
+    #kontaktos .contactform input {
+        width: 25vw;
+    }
+
+    #kontaktos p.indsend {
+        margin-top: 7vh;
+    }
+}
+
+
+/*//////////////////////////*/
+/*  WHAT ARE - BLOG FORSIDE */
+/*//////////////////////////*/
+
+
+#whatare .titlename {
+    font-size: 3rem;
+}
+
+#whatare div.content img {
+    width: 450px;
+    height: 450px;
+    float: right;
+}
+
+#whatare main {
+    background-color: #715989;
+}
+
+#whatare .content {
+    margin: 0px;
+    height: 100vh;
+    background-color: #BEB4A6;
+}
+
+/*//////////////////////////*/
+/*  WHAT ARE - BLOG FORSIDE */
+/*         SIDEBAR          */
+/*//////////////////////////*/
+
+#whatare .sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+
+
+    /*//////////////////////////*/
+    /*  WHAT ARE - BLOG FORSIDE */
+    /*         SIDEBAR          */
+    /*       MEDIA QUERY        */
+    /*//////////////////////////*/
+
+    
+    #whatare .sidebar {
+        width: 300px;
+        height: 100vh;
+        float: left;
+        background-color: #beb4a683;
+        display: flex;
+    }
+
+    #whatare .sidebar section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: #d66d3cab 2px dotted;
+    }
+
+    #whatare .sidebar a {
+        margin: 1rem 1rem 1rem 1rem;
+        background-color: #715989;
+        border: #715989 10px solid;
+        border-radius: 5px;
+
+        display: flex;
+    }
+
+    #whatare .sidebar a img {
+        border-radius: 5px;
+        max-height: 3rem;
+    }
+
+    #whatare .sidebar h2 {
+        margin: 2rem;
+        margin-bottom: 20px;
+        padding-bottom: 2rem;
+        align-self: center;
+        border-bottom: 10px groove #715989;
+    }
+
+    #whatare .main-opdeler {
+        flex-direction: row;
+    }
+
+    #whatare .article{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #whatare .article img {
+        width: 50px;
+        height: 50px;
+    }
+}
